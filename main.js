@@ -110,9 +110,7 @@ function init() {
 
 
 
-	var controls = new OrbitControls( camera, renderer.domElement );
-  
-  controls.update();
+	
 
 	//
 
