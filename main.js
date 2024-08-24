@@ -50,9 +50,9 @@ function init() {
 	camera.add( pointLight );
 	scene.add( camera );
 
-  var lightHelper = new THREE.PointLightHelper(pointLight)
-  var gridHelper = new THREE.GridHelper(200,50);
-  scene.add(lightHelper, gridHelper);
+  //var lightHelper = new THREE.PointLightHelper(pointLight)
+  //var gridHelper = new THREE.GridHelper(200,50);
+  //scene.add(lightHelper, gridHelper);
 
   function addStar(){
     var geometry = new THREE.SphereGeometry(0.25, 24, 24);

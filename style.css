@@ -172,23 +172,27 @@ a {
     flex-direction: column;
     gap: 15px;
     margin-right: auto;
-    padding-top: 10px;
+    border:rgb(91, 92, 93);
+    padding: 10px;
     font-size: 17px;
-    
-    
-}
-
-.container .formPart form {
+    width: 100%;
+    font-family: my-font;
+    color:rgb(237, 253, 6);
     background-color: var(--eddy-blue);
-    outline: var(--eddy-blue);
-
+    opacity: 70%;
+    border-radius: 15px;
+    
+    
 }
 
-.container .formPart form input {
+
+
+input {
     padding: 7px 7px;
-    border-radius: 100px;
+    border-radius: 1px;
     max-width: 100%;
     max-height: 100%; 
+    font-family: my-font;
 
 }
 
@@ -203,6 +207,7 @@ a {
     border-radius: 6px;
     background-color: rgb(237, 253, 6);
     color: var(--eddy-blue);
+    font-family: my-font;
 }
 
 canvas {
