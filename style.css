@@ -133,16 +133,14 @@ a {
     align-items: center;
     position: relative;
     bottom: 0px;
-    border-radius: 50px;
+    border-radius: 49px;
     justify-content: center;
     left: -3%;
-         
 }
 
 .rfr {
     color: var(--eddy-yellow);
     font-family: my-font;
-    
 }
 
 
