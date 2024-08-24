@@ -1,0 +1,18 @@
+{
+  "name": "bebotetest",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^5.4.1"
+  },
+  "dependencies": {
+    "obj2gltf": "^3.1.6",
+    "three": "^0.167.1"
+  }
+}
