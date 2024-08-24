@@ -20,12 +20,13 @@ html {
     font-family: sans-serif;
     font-weight: 400;
     margin-top: 20px;
-    padding-bottom: 100px;
     align-items: center;
     z-index: 3;
     position: absolute;
     top: -2%;
     left: 25%;
+    padding: 25px;
+    gap: 30px;
     
     
 }
@@ -128,7 +129,7 @@ a {
 
 .rfrPoints {
     display: flex;
-    gap: 50%;
+    gap: 20%;
     align-items: center;
     position: relative;
     bottom: 0px;
