@@ -92,7 +92,7 @@ function init() {
     
 		// add to scene
 		scene.add( obj );
-    scene.add( beboTexture );
+    obj.add( beboTexture );
     
     const spotLight = new THREE.SpotLight(0xffffff, 4000, 100, 100, 1);
     spotLight.position.set(0, 25, 0);

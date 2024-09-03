@@ -87,13 +87,14 @@ a {
 
 .rfrPoints {
     display: flex;
-    gap: 20%;
+    gap: 25%;
     align-items: center;
     position: relative;
     bottom: 0px;
     border-radius: 49px;
     justify-content: center;
     left: -10%;
+    
 }
 
 .rfr {
@@ -124,24 +125,21 @@ a {
     background-color: transparent;  
     gap: 15px;
     padding: 20px;
+    border-bottom: 2px solid yellow;
 }
 
 .form {
     display: flex;
     flex-direction: column;
     gap: 15px;
-    margin-right: auto;
     border:rgb(91, 92, 93);
     padding: 10px;
     font-size: 17px;
     width: 100%;
     font-family: my-font;
     color:rgb(237, 253, 6);
-    background-color: var(--eddy-blue);
     opacity: 70%;
     border-radius: 15px;
-    
-    
 }
 
 
@@ -157,7 +155,7 @@ input {
 
 .container .formPart form textarea {
     padding: 25px 15px;
-    border-radius: 100px;
+    border-radius: 10px;
     max-width: 100%;
     max-height: 100%;
 }
