@@ -7,6 +7,16 @@
     <title>Dj Bebote</title>
   </head>
   <body>
+    <nav id="header">
+      
+  
+      <ul>
+        <li><a href="#soundcloudapp">Mixes</a></li>
+        <li><a href="#dates">Dates</a></li>
+        <li><a href="formPart">Book me</a></li>
+      </ul>
+
+    </nav>
     <div id="app"></div>
     <script type="module" src="/main.js"></script>
     <div class="container">
@@ -33,10 +43,28 @@
 
       </div>
 
-      <div class="soundcloudapp">
-        <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay"
-          src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1907194751&amp;{ ADD YOUR PARAMETERS HERE }">
-        </iframe>
+      <div id="soundcloudapp">
+        <div id="frames">
+          <span>
+            <iframe height="166" scrolling="no" frameborder="no" allow="autoplay"
+              src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1907194751&amp;{ ADD YOUR PARAMETERS HERE }">
+            </iframe>
+          </span>
+          <span>
+            <iframe height="166" scrolling="no" frameborder="no" allow="autoplay"
+              src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1775897193&amp;{ ADD YOUR PARAMETERS HERE }">
+            </iframe>
+          </span>
+          <span>
+            <iframe height="166" scrolling="no" frameborder="no" allow="autoplay"
+              src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1792051201&amp;{ ADD YOUR PARAMETERS HERE }">
+            </iframe>
+          </span>
+        </div>
+        <div class="controlBtns">
+          <button type="button" id="prevBtn"><img src="./images/right-arrow1.jpg"></button>
+          <button type="button" id="nextBtn"><img src="./images/right-arrow1.jpg"></button>
+        </div>
       </div>
 
       

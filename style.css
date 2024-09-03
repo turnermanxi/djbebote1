@@ -14,6 +14,9 @@ html {
     src: url(Robot9000Italic.ttf);
 }
 
+
+
+
 .container {
     display: flex;
     flex-direction: column;
@@ -24,7 +27,7 @@ html {
     align-items: center;
     z-index: 3;
     position: absolute;
-    top: -2%;
+    top: 10%;
     left: 25%;
     padding: 25px;
     gap: 30px;
@@ -34,7 +37,7 @@ html {
 :root {
     --eddy-blue: rgb(6, 158, 247);
     --bg-color: rgb(91, 92, 93);
-    --eddy-yellow: rgb(67, 8, 231);
+    --eddy-yellow: rgb(209, 231, 8);
 }
 
 p {
@@ -175,11 +178,124 @@ canvas {
 }
 
 iframe {
-    background-color: black;
-    width: 150%;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    max-width: 100%;
     position: relative;
+    justify-content: center;
     align-items: center;
-    left: -27%;
+
 }
+
+#soundcloudapp {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;    
+    max-width: 100%;
+    position: relative;
+    gap: 10px;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+}
+
+#frames {
+    display: block;
+    resize: both;
+    grid-auto-rows: min-content;
+    overflow-x: scroll;
+    gap: 20px;
+    max-width: 100%;
+}
+
+#frames::-webkit-scrollbar {
+    display: none;
+}
+
+.controlBtns {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 40%;
+    color: white;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: transparent;
+}
+
+
+
+#nextBtn, #prevBtn {
+    cursor: pointer;
+    background-color: transparent;
+    font-size: 30px;
+    border: none;
+    padding: 10px;
+    color: white;
+    opacity: 15%;
+  }
+
+#nextBtn:focus, #prevBtn:focus {
+    outline: none;
+    opacity: 90%;
+  }
+  
+#prevBtn {
+    transform: rotate(180deg);
+    
+  }
+
+#header {
+    text-align: center;
+    display: grid;
+    max-height: 35%;
+    max-width: 100%;
+    color: white;
+    font-size: 35%;
+    font-family: my-font;
+    align-items: center;
+    position: relative;
+    grid-template-columns: 1fr;
+}
+
+#header img {
+    width: 8%;
+
+}
+
+#header a{
+    color: var(--eddy-blue);
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    text-align: center;
+    
+}
+
+ul {
+    list-style-type: none;
+    background-color: var(--eddy-yellow);
+    margin: 0px;
+    font-size: 25px;
+    border-radius: 25px;
+    padding: 0px;
+    height: 70%;
+    position: relative;
+    top: -20px;
+    
+    
+    
+}
+
+#header li {
+    float: left;
+    
+
+}
+
+  
 
 
