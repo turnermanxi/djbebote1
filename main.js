@@ -64,7 +64,7 @@ function init() {
     star.position.set(x, y, z);
     scene.add(star)
   }
-  Array(20).fill().forEach(addStar)
+  Array(200).fill().forEach(addStar)
 
   const spaceTexture = new THREE.TextureLoader().load('danny_lacrue_6.jpg');
   scene.background = spaceTexture;
@@ -92,6 +92,7 @@ function init() {
     
 		// add to scene
 		scene.add( obj );
+    scene.add( beboTexture );
     
     const spotLight = new THREE.SpotLight(0xffffff, 4000, 100, 100, 1);
     spotLight.position.set(0, 25, 0);
