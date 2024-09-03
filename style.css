@@ -174,4 +174,12 @@ canvas {
     
 }
 
+iframe {
+    background-color: black;
+    width: 150%;
+    position: relative;
+    align-items: center;
+    left: -27%;
+}
+
 

@@ -1,8 +1,10 @@
-import './style.css'
+import './style.css';
 import * as THREE from 'three';
 import { MTLLoader } from 'three/addons/loaders/MTLLoader.js';
 import { OBJLoader } from 'three/examples/jsm/loaders/OBJLoader.js';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+
+
 
 var container;
 
