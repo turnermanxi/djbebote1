@@ -64,7 +64,7 @@ function init() {
     star.position.set(x, y, z);
     scene.add(star)
   }
-  Array(50).fill().forEach(addStar)
+  Array(20).fill().forEach(addStar)
 
   const spaceTexture = new THREE.TextureLoader().load('danny_lacrue_6.jpg');
   scene.background = spaceTexture;
@@ -103,7 +103,7 @@ function init() {
 	renderer = new THREE.WebGLRenderer();
   
 	renderer.setPixelRatio( window.devicePixelRatio );
-	renderer.setSize( window.innerWidth, window.innerHeight);
+	renderer.setSize( window.innerWidth / .95, window.innerHeight / .95);
   camera.position.setZ(5)
   
 	container.appendChild( renderer.domElement );
@@ -136,10 +136,10 @@ document.body.onscroll = moveCamera
 
 function onWindowResize() {
 
-	camera.aspect = 500 / 2, 400 / 2 ;
+	camera.aspect = 125 / 2, 100 / 2 ;
 	camera.updateProjectionMatrix();
 
-	renderer.setSize( 500 / 2, 400 / 2  );
+	renderer.setSize( 125 / 2, 100 / 2  );
 
 }
 
