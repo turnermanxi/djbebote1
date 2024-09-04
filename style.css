@@ -178,14 +178,12 @@ canvas {
 }
 
 iframe {
-    display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr;
-    max-width: fit-content;
+    display: flex;
     position: relative;
     justify-content: center;
     align-items: center;
-
+    width: 1000px;
+    overflow: hidden;
 }
 
 #soundcloudapp {
@@ -195,20 +193,21 @@ iframe {
     position: initial;
     box-sizing: border-box;
     justify-content: center;
-    align-items: center;
     resize: both;
-    inset: 0;
-    margin: 0;
+    
 }
 
 #frames {
     display: flex;
     flex-direction: row;
     overflow-x: scroll;
-    gap: 50%;
-    max-width: fit-content;
+    max-width: 100%;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    gap: 50%;
+    position: relative;
+    overflow: hidden;
+    
     
 }
 

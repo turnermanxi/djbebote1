@@ -14,6 +14,10 @@ var container;
 
 var camera, scene, renderer;
 
+songChanger();
+
+soundCloudApp();
+
 init();
 animate();
 
@@ -161,8 +165,8 @@ function animate() {
 
 }
 
-soundCloudApp();
-songChanger();
+
+
 
 
 
