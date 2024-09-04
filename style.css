@@ -180,7 +180,12 @@ canvas {
     position: fixed;
     left: 0;
     top: 0;
-    
+}
+
+@media (max-width: 680px) {
+    canvas {
+        position: relative;
+    }
 }
 
 iframe {

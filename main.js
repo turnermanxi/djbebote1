@@ -14,12 +14,12 @@ var container;
 
 var camera, scene, renderer;
 
-songChanger();
 
-soundCloudApp();
 
 init();
 animate();
+
+
 
 
 
@@ -127,6 +127,7 @@ function init() {
 
 	window.addEventListener( 'resize', onWindowResize, false );
 
+  
 }
 
 function moveCamera() {
@@ -165,6 +166,9 @@ function animate() {
 
 }
 
+songChanger();
+
+soundCloudApp();
 
 
 
