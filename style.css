@@ -280,6 +280,12 @@ iframe {
     }
   }
 
+  @media (max-width: 380px) {
+    ul {
+        width: 380px;
+    }
+  }
+
 #nextBtn:focus, #prevBtn:focus {
     outline: none;
     opacity: 90%;
