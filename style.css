@@ -281,10 +281,17 @@ iframe {
     ul {
         width: 680px;
     }
+
+    footer{
+        width: 680px
+    }
   }
 
   @media (max-width: 380px) {
     ul {
+        width: 380px;
+    }
+    footer {
         width: 380px;
     }
   }
