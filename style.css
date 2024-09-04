@@ -86,14 +86,11 @@ a {
     display: flex;
     margin-right: 0;
     gap: 10px;
-    max-width: 1fr;
-    height: 1fr;
     position: fixed;
-    left: 70%;
+    left: 75%;
     top: 2%;
     z-index: +1;
-    width: 200px;
-    height: 200px;
+    width: 10rem;
 }
 
 
@@ -204,7 +201,14 @@ iframe {
 @media (max-width: 680px) {
     iframe {
         width: 680px;
-        left: .5%;
+        left: 5%;
+    }
+}
+
+@media (min-width: 1080px) {
+    iframe {
+        width: 1000px;
+        left: 40%;
     }
 }
 
