@@ -38,6 +38,10 @@ html {
         font-size: 25px;
 
     }
+
+    html {
+        background-repeat: no-repeat;
+    }
 }
 
 :root {
@@ -270,6 +274,10 @@ iframe {
     .controlBtns {
         top: 40%;
     }
+
+    ul {
+        width: 680px;
+    }
   }
 
 #nextBtn:focus, #prevBtn:focus {
@@ -320,6 +328,8 @@ ul {
     height: 70%;
     position: relative;
     top: -20px;
+    max-width: 100%;
+    inset: 2;
     
     
 }
