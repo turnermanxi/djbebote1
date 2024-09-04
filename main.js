@@ -74,7 +74,7 @@ function init() {
     star.position.set(x, y, z);
     scene.add(star)
   }
-  Array(200).fill().forEach(addStar)
+  Array(20).fill().forEach(addStar)
 
   const spaceTexture = new THREE.TextureLoader().load('danny_lacrue_6.jpg');
   scene.background = spaceTexture;
