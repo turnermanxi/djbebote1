@@ -1,8 +1,11 @@
 import './style.css';
 import * as THREE from 'three';
+import { soundCloudApp } from './soundcloud.js';
+import { songChanger } from './soundcloud.js';
 import { MTLLoader } from 'three/addons/loaders/MTLLoader.js';
 import { OBJLoader } from 'three/examples/jsm/loaders/OBJLoader.js';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+
 
 
 
@@ -13,6 +16,7 @@ var camera, scene, renderer;
 
 init();
 animate();
+
 
 
 function init() {
@@ -157,6 +161,8 @@ function animate() {
 
 }
 
+soundCloudApp();
+songChanger();
 
 
 
