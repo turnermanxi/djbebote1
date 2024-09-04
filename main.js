@@ -137,8 +137,8 @@ function moveCamera() {
   camera.rotation.y = t * -0.0005;
 
   obj.rotation.x += 0.01
-  obj.rotation.y += 0.01;
-  obj.rotation.z += 0.01;
+  obj.rotation.y += 0.009;
+  obj.rotation.z += 0.008;
 }
 
 document.body.onscroll = moveCamera
@@ -152,6 +152,12 @@ function onWindowResize() {
 	camera.updateProjectionMatrix();
 
 	renderer.setSize( 125 / 2, 100 / 2  );
+
+  if(camera.aspect>1){
+    camera.position.z = your_start_camera_distance/camera.aspect;
+  }else{
+    camera.position.z= your_start_camera_distance;
+  }
 
 }
 
