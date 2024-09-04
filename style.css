@@ -285,6 +285,10 @@ iframe {
     footer{
         width: 680px;
     }
+
+    header {
+        width: 680px;
+    }
   }
 
   @media (max-width: 380px) {
@@ -292,6 +296,9 @@ iframe {
         width: 380px;
     }
     footer {
+        width: 380px;
+    }
+    header {
         width: 380px;
     }
   }
