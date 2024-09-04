@@ -28,7 +28,6 @@ html {
     z-index: 3;
     position: absolute;
     top: 10%;
-    left: 12%;
     padding: 25px;
     gap: 30px;
     
@@ -37,7 +36,7 @@ html {
 @media (max-width: 380px) {
     .container {
         font-size: 25px;
-        
+
     }
 }
 
