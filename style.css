@@ -287,7 +287,10 @@ iframe {
     }
 
     header {
-        width: 680px;
+        width: 100%;
+    }
+    socials {
+        top: 30%;
     }
   }
 
@@ -299,7 +302,10 @@ iframe {
         width: 380px;
     }
     header {
-        width: 380px;
+        width: 100%;
+    }
+    .socials {
+        top: 30%;
     }
   }
 
