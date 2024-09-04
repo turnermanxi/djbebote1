@@ -226,7 +226,7 @@ iframe {
     display: flex;
     flex-direction: row;
     overflow-x: scroll;
-    max-width: 100%;
+    max-width: 75%;
     gap: 20%;
     position: relative;
     overflow: hidden;
