@@ -34,6 +34,13 @@ html {
     
 }
 
+@media (max-width: 380px) {
+    .container {
+        font-size: 25px;
+        
+    }
+}
+
 :root {
     --eddy-blue: rgb(6, 158, 247);
     --bg-color: rgb(91, 92, 93);
@@ -271,9 +278,10 @@ iframe {
 #header a{
     color: var(--eddy-blue);
     text-decoration: none;
-    padding: 10px;
+    padding: 5px;
     display: block;
     text-align: center;
+    max-width: 100%;
     
 }
 
@@ -289,14 +297,10 @@ ul {
     top: -20px;
     
     
-    
-    
 }
 
 #header li {
     float: left;
-    
-
 }
 
   
