@@ -39,12 +39,12 @@ export function songChanger () {
         
         nextBtn.addEventListener('click', () => {
             scrollContainer.style.scrollBehavior = "smooth";
-            scrollContainer.scrollLeft += 1500;
+            scrollContainer.scrollLeft += 700;
         });
         
         prevBtn.addEventListener('click', () => {
             scrollContainer.style.scrollBehavior = "smooth";
-            scrollContainer.scrollLeft -= 1500;
+            scrollContainer.scrollLeft -= 700;
         });
     
 };
