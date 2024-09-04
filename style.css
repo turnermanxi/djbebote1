@@ -382,7 +382,7 @@ footer {
     bottom: -110%;
     left: 0;
     z-index: 10;
-    max-width: 100%;
+    width: 100%;
     text-align: center;
 }
 
