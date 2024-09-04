@@ -84,10 +84,9 @@ a {
 
 .social {
     display: flex;
-    margin-right: 0;
+    right: 10px;
     gap: 10px;
     position: fixed;
-    left: 60%;
     top: 2%;
     z-index: +1;
     width: 10rem;
@@ -195,7 +194,7 @@ iframe {
     align-items: center;
     width: 1000px;
     overflow: hidden;
-    left: 8%;
+    left: 2%;
 }
 
 @media (max-width: 680px) {
@@ -228,13 +227,11 @@ iframe {
     flex-direction: row;
     overflow-x: scroll;
     max-width: 100%;
-    align-items: center;
-    justify-content: space-between;
-    gap: 50%;
+    gap: 20%;
     position: relative;
     overflow: hidden;
-    
-    
+    margin: 0;
+    padding: 20px;
 }
 
 #frames::-webkit-scrollbar {
@@ -345,8 +342,8 @@ iframe {
 #header a{
     color: var(--eddy-blue);
     text-decoration: none;
-    padding: 1px;
-    display: block;
+    padding: 5px;
+    display: grid;
     text-align: center;
     
 }
@@ -364,12 +361,16 @@ ul {
     top: -20px;
     width: 100%;
     inset: 2;
-    
-    
+        
 }
 
-#header li {
+li {
     float: left;
+}
+
+ul:hover {
+    cursor: pointer;
+    color: white;
 }
 
 footer {
@@ -379,11 +380,12 @@ footer {
     font-size: 15px;
     align-items: center;
     color: var(--eddy-blue);
-    bottom: -140%;
+    bottom: -180%;
     left: 0;
     z-index: 10;
     width: 100%;
     text-align: center;
+    opacity: 65%;
 }
 
   
