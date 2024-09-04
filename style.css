@@ -268,11 +268,10 @@ iframe {
     #nextBtn, #prevBtn {
         padding: .0001px;
         position: relative;
-        top: 100%;
     }
 
     .controlBtns {
-        top: 40%;
+        top: 50%;
     }
 
     ul {
