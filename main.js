@@ -28,7 +28,7 @@ function init() {
 	container = document.createElement( 'div' );
 	document.body.appendChild( container );
 
-	camera = new THREE.PerspectiveCamera( 100, window.innerWidth / window.innerHeight, .001, 100 );
+	camera = new THREE.PerspectiveCamera( 125, window.innerWidth / window.innerHeight, .001, 40 );
 	camera.position.y = 1;
   camera.position.z = 0;
   camera.position.x = 0;
@@ -74,7 +74,7 @@ function init() {
     star.position.set(x, y, z);
     scene.add(star)
   }
-  Array(20).fill().forEach(addStar)
+  Array(200).fill().forEach(addStar)
 
   const spaceTexture = new THREE.TextureLoader().load('danny_lacrue_6.jpg');
   scene.background = spaceTexture;
