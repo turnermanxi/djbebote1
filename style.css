@@ -240,9 +240,9 @@ iframe {
 
 .controlBtns {
     width: 100%;
-    position: absolute;
+    position: relative;
     left: 0;
-    top: 45%;
+    top: -20%;
     color: white;
     transform: translateY(-50%);
     display: flex;
