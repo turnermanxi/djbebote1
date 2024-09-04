@@ -289,8 +289,8 @@ iframe {
     header {
         width: 100%;
     }
-    socials {
-        top: 30%;
+    .socials {
+        top: 50%;
     }
   }
 
