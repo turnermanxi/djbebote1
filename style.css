@@ -190,6 +190,14 @@ iframe {
     align-items: center;
     width: 1000px;
     overflow: hidden;
+    left: 8%;
+}
+
+@media (max-width: 680px) {
+    iframe {
+        width: 680px;
+        left: .5%;
+    }
 }
 
 #soundcloudapp {
@@ -225,13 +233,14 @@ iframe {
     width: 100%;
     position: absolute;
     left: 0;
-    top: 40%;
+    top: 45%;
     color: white;
     transform: translateY(-50%);
     display: flex;
     align-items: center;
     justify-content: space-between;
     background-color: transparent;
+    gap: 40px;
 }
 
 
@@ -241,9 +250,21 @@ iframe {
     background-color: transparent;
     font-size: 30px;
     border: none;
-    padding: 10px;
+    padding: 15px;
     color: white;
     opacity: 15%;
+  }
+
+  @media (max-width: 680px) {
+    #nextBtn, #prevBtn {
+        padding: .0001px;
+        position: relative;
+        top: 100%;
+    }
+
+    .controlBtns {
+        top: 40%;
+    }
   }
 
 #nextBtn:focus, #prevBtn:focus {
