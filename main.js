@@ -137,8 +137,8 @@ function moveCamera() {
   camera.rotation.y = t * -0.0005;
 
   obj.rotation.x += 0.01
-  obj.rotation.y += 0.075;
-  obj.rotation.z += 0.05;
+  obj.rotation.y += 0.01;
+  obj.rotation.z += 0.01;
 }
 
 document.body.onscroll = moveCamera
