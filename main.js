@@ -154,9 +154,9 @@ function onWindowResize() {
 	renderer.setSize( 125 / 2, 100 / 2  );
 
   if(camera.aspect>1){
-    camera.position.z = your_start_camera_distance/camera.aspect;
+    camera.position.z = 0.01 / camera.aspect;
   }else{
-    camera.position.z= your_start_camera_distance;
+    camera.position.z= 0.01;
   }
 
 }
