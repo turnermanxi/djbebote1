@@ -9,13 +9,16 @@ html {
     justify-content: center;
 }
 
+body ::after {
+    display: block;
+    height: 20px;
+  /* Set same as footer's height */
+}
+
 @font-face {
     font-family: my-font;
     src: url(Robot9000Italic.ttf);
 }
-
-
-
 
 .container {
     display: flex;
@@ -26,28 +29,75 @@ html {
     margin-top: 20px;
     align-items: center;
     z-index: 3;
-    position: absolute;
-    top: 10%;
+    top: 0;
     padding: 45px;
     gap: 30px;
     
 }
 
-@media (max-width: 380px) {
-    .container {
-        font-size: 25px;
 
-    }
-
-    html {
-        background-repeat: no-repeat;
-    }
-}
 
 :root {
     --eddy-blue: rgb(6, 158, 247);
     --bg-color: rgb(91, 92, 93);
     --eddy-yellow: rgb(209, 231, 8);
+}
+
+#header {
+    text-align: center;
+    display: grid;
+    max-height: 35%;
+    width: 100%;
+    color: white;
+    font-size: 1fr;
+    font-family: my-font;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+    grid-template-columns: 1fr;
+    left: 0;
+    flex: none;
+    top: 0;
+    resize: both;
+}
+
+#header img {
+    width: 8%;
+
+}
+
+#header a{
+    color: var(--eddy-blue);
+    text-decoration: none;
+    padding: 5px;
+    display: grid;
+    text-align: center;
+    
+}
+
+
+ul {
+    list-style-type: none;
+    background-color: var(--eddy-yellow);
+    margin: 0px;
+    font-size: 25px;
+    border-radius: 10px;
+    padding: 0px;
+    height: 70%;
+    position: relative;
+    top: -20px;
+    width: 100%;
+    inset: 2;
+        
+}
+
+li {
+    float: left;
+}
+
+ul:hover {
+    cursor: pointer;
+    color: white;
 }
 
 p {
@@ -58,6 +108,7 @@ p {
         align-items: center;
         font-size: 30px;
         height: 100%;
+        
 }
 
 #Home {
@@ -65,7 +116,7 @@ p {
     max-width: 35%;
     background-color: transparent;
     border: transparent;
-    padding: 20px;
+    padding-top: 8%;
     left: 2%;
     position: relative;
     
@@ -90,7 +141,7 @@ a {
     right: 10px;
     gap: 10px;
     position: fixed;
-    top: 2%;
+    top: 0;
     z-index: +1;
     width: 8rem;
 }
@@ -98,25 +149,28 @@ a {
 
 .rfrPoints {
     display: flex;
-    gap: 25%;
     align-items: center;
     position: relative;
     bottom: 0px;
-    border-radius: 49px;
     justify-content: center;
-    left: 0;
-    
+    left: 0;  
 }
 
 .rfr {
-    color: var(--eddy-blue);
+    color: var(--eddy-yellow);
     font-family: my-font;
+}
+
+#rfr1 {
+    color: var(--eddy-yellow);
+    font-family: my-font;
+    position: relative;
+    left: -40%;
 }
 
 
 #exx {
     display: inline-block;
-    line-height: 1em;
     overflow: hidden;
     color: var(--eddy-yellow);
 }
@@ -143,14 +197,14 @@ a {
     display: flex;
     flex-direction: column;
     gap: 15px;
-    border:rgb(91, 92, 93);
     padding: 10px;
     font-size: 17px;
-    width: 100%;
+    max-width: 100%;
     font-family: my-font;
     color:rgb(237, 253, 6);
     opacity: 70%;
-    border-radius: 15px;
+    position: relative;
+    left: 0;
 }
 
 
@@ -158,7 +212,7 @@ a {
 input {
     padding: 7px 7px;
     border-radius: 1px;
-    max-width: 100%;
+    width: 30rem;
     max-height: 100%; 
     font-family: my-font;
 
@@ -176,6 +230,9 @@ input {
     background-color: rgb(237, 253, 6);
     color: var(--eddy-blue);
     font-family: my-font;
+    width: 50%;
+    position: relative;
+    left: 25%;
 }
 
 canvas {
@@ -184,11 +241,7 @@ canvas {
     top: 0;
 }
 
-@media (max-width: 680px) {
-    canvas {
-        position: relative;
-    }
-}
+
 
 iframe {
     display: flex;
@@ -200,19 +253,7 @@ iframe {
     left: 2%;
 }
 
-@media (max-width: 680px) {
-    iframe {
-        width: 680px;
-        left: 5%;
-    }
-}
 
-@media (min-width: 1080px) {
-    iframe {
-        width: 1000px;
-        left: 40%;
-    }
-}
 
 #soundcloudapp {
     display: grid;
@@ -267,7 +308,54 @@ iframe {
     opacity: 15%;
   }
 
-  @media (max-width: 680px) {
+  
+
+#nextBtn:focus, #prevBtn:focus {
+    outline: none;
+    opacity: 90%;
+  }
+  
+#prevBtn {
+    transform: rotate(180deg);
+    
+  }
+
+
+
+footer {
+    background-color: var(--eddy-yellow);
+    position: absolute;
+    padding: 30px;
+    font-size: 15px;
+    color: var(--eddy-blue);
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    height: 20px;
+    text-align: center;
+    opacity: 65%;
+    margin-bottom: 0;
+}
+
+  
+@media (max-width: 380px) {
+    .container {
+        font-size: 25px;
+
+    }
+
+    html {
+        background-repeat: no-repeat;
+    }
+}
+
+@media (max-width: 680px) {
+    canvas {
+        position: relative;
+    }
+}
+
+@media (max-width: 680px) {
     #nextBtn, #prevBtn {
         padding: .0001px;
         position: relative;
@@ -310,86 +398,17 @@ iframe {
     }
   }
 
-#nextBtn:focus, #prevBtn:focus {
-    outline: none;
-    opacity: 90%;
-  }
-  
-#prevBtn {
-    transform: rotate(180deg);
-    
-  }
-
-#header {
-    text-align: center;
-    display: grid;
-    max-height: 35%;
-    width: 100%;
-    color: white;
-    font-size: 1fr;
-    font-family: my-font;
-    align-items: center;
-    position: absolute;
-    z-index: 1;
-    grid-template-columns: 1fr;
-    left: 0;
-    flex: none;
+  @media (max-width: 680px) {
+    iframe {
+        width: 680px;
+        left: 5%;
+    }
 }
 
-#header img {
-    width: 8%;
-
+@media (min-width: 1080px) {
+    iframe {
+        width: 1000px;
+        left: 40%;
+    }
 }
-
-#header a{
-    color: var(--eddy-blue);
-    text-decoration: none;
-    padding: 5px;
-    display: grid;
-    text-align: center;
-    
-}
-
-
-ul {
-    list-style-type: none;
-    background-color: var(--eddy-yellow);
-    margin: 0px;
-    font-size: 25px;
-    border-radius: 10px;
-    padding: 0px;
-    height: 70%;
-    position: relative;
-    top: -20px;
-    width: 100%;
-    inset: 2;
-        
-}
-
-li {
-    float: left;
-}
-
-ul:hover {
-    cursor: pointer;
-    color: white;
-}
-
-footer {
-    background-color: var(--eddy-yellow);
-    position: absolute;
-    padding: 30px;
-    font-size: 15px;
-    align-items: center;
-    color: var(--eddy-blue);
-    bottom: -180%;
-    left: 0;
-    z-index: 10;
-    width: 100%;
-    text-align: center;
-    opacity: 65%;
-}
-
-  
-
 
