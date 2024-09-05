@@ -199,7 +199,6 @@ a {
     gap: 15px;
     padding: 10px;
     font-size: 17px;
-    max-width: 100%;
     font-family: my-font;
     color:rgb(237, 253, 6);
     opacity: 70%;
@@ -232,7 +231,9 @@ input {
     font-family: my-font;
     width: 50%;
     position: relative;
-    left: 25%;
+    left: 0;
+    align-items: center;
+    justify-content: center;
 }
 
 canvas {
@@ -337,23 +338,6 @@ footer {
     margin-bottom: 0;
 }
 
-  
-@media (max-width: 380px) {
-    .container {
-        font-size: 25px;
-
-    }
-
-    html {
-        background-repeat: no-repeat;
-    }
-}
-
-@media (max-width: 680px) {
-    canvas {
-        position: relative;
-    }
-}
 
 @media (max-width: 680px) {
     #nextBtn, #prevBtn {
@@ -381,6 +365,27 @@ footer {
         display: flex;
         flex-direction: column;
     }
+    canvas {
+        position: relative;
+        width: 680px;
+    }
+    iframe {
+        width: 680px;
+        left: 5%;
+    }
+    form {
+        width: 680px;
+        left: 40%;
+        align-items: center;
+        justify-content: center;
+    }
+    #formSubmit {
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        left: -60%;
+
+    }
   }
 
   @media (max-width: 380px) {
@@ -396,14 +401,24 @@ footer {
     .socials {
         top: 60%;
     }
+
+    form {
+        width: 380px;
+        left: 40%;
+    }
+    .container {
+        font-size: 25px;
+
+    }
+    html {
+        background-repeat: no-repeat;
+    }
+    canvas {
+        width: 380px;
+    }
   }
 
-  @media (max-width: 680px) {
-    iframe {
-        width: 680px;
-        left: 5%;
-    }
-}
+
 
 @media (min-width: 1080px) {
     iframe {
