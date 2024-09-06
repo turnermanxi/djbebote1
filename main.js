@@ -2,7 +2,7 @@ import './style.css';
 import * as THREE from 'three';
 import { soundCloudApp } from './soundcloud.js';
 import { songChanger } from './soundcloud.js';
-import { MTLLoader } from 'three/addons/loaders/MTLLoader.js';
+import { MTLLoader } from 'three/examples/jsm/loaders/MTLLoader.js';
 import { OBJLoader } from 'three/examples/jsm/loaders/OBJLoader.js';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 
@@ -28,9 +28,9 @@ function init() {
 	container = document.createElement( 'div' );
 	document.body.appendChild( container );
 
-	camera = new THREE.PerspectiveCamera( 85, window.innerWidth / window.innerHeight, .001, 40 );
-	camera.position.y = 1;
-  camera.position.z = 0;
+	camera = new THREE.PerspectiveCamera( 65, window.innerWidth / window.innerHeight, 1, 100 );
+	camera.position.y = 2;
+  camera.position.z = 1;
   camera.position.x = 0;
 
 	// scene
@@ -81,35 +81,71 @@ function init() {
 
 	// model
 
-  
-  var loader = new OBJLoader();
-  
-	loader.load('djbebote.obj', function ( obj ) {
+  const mtlLoader = new MTLLoader();
+  mtlLoader.load('bebo3.mtl', ( material ) => {
+    material.preload();
+    const loader = new OBJLoader();
+	  loader.load('djbebote.obj', ( obj ) => {
 		// center asset
-		var box = new THREE.Box3().setFromObject( obj );
-		var center = new THREE.Vector3();
-		box.getCenter( center );
-		obj.position.sub( center );
-    obj.rotation.x += 0.01;
-    obj.rotation.y += 0.009;
-    obj.rotation.z += 0.008;
+    
+		  var box = new THREE.Box3().setFromObject( obj );
+		  var center = new THREE.Vector3();
+		  box.getCenter( center );
+		  obj.position.sub( center );
+      
 
-    var beboTexture = new THREE.TextureLoader().load('bebo.mtl');
-
-
+      obj.rotation.x += 0.01;
+      obj.rotation.y += 0.009;
+      obj.rotation.z += 0.008;
 
     
-    
+
 		// add to scene
 		scene.add( obj );
-    obj.add( beboTexture );
+    
     
     const spotLight = new THREE.SpotLight(0xffffff, 4000, 100, 100, 1);
     spotLight.position.set(0, 25, 0);
     scene.add(spotLight);
 
-	} );
+	});
 
+  });
+
+  const loader = new OBJLoader();
+	  loader.load('radio.obj', ( obj ) => {
+		// center asset
+    
+		  var box = new THREE.Box3().setFromObject( obj );
+		  var center = new THREE.Vector3();
+		  box.getCenter( center );
+		  obj.position.sub( center );
+
+      obj.position.y = 3;
+      obj.position.x = -3.3;
+      obj.position.z = -9;
+
+      obj.scale.x = -.1;
+      obj.scale.y = -.1;
+      obj.scale.z = -.1;
+
+
+      obj.rotation.x += -.05;
+      obj.rotation.y += -2.1;
+      obj.rotation.z += -2.1;
+
+    
+
+		// add to scene
+		scene.add( obj );
+    
+    
+    const spotLight = new THREE.SpotLight(0xffffff, 4000, 100, 100, 1);
+    spotLight.position.set(25, 25, 25);
+    scene.add(spotLight);
+
+	});
+  
 
 	renderer = new THREE.WebGLRenderer();
   
