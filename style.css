@@ -60,6 +60,15 @@ html {
     
 }
 
+#header a:hover{
+    color: black;
+    text-decoration: none;
+    display: grid;
+    text-align: center;
+    
+}
+
+
 
 ul {
     list-style-type: none;
