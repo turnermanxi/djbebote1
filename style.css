@@ -208,7 +208,7 @@ input {
 .container .formPart form textarea {
     padding: 25px 15px;
     border-radius: 10px;
-    max-width: 100%;
+    width: 20rem;
     max-height: 100%;
 }
 
