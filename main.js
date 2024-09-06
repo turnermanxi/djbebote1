@@ -148,7 +148,7 @@ document.body.onscroll = moveCamera
 
 function onWindowResize() {
 
-	camera.aspect = 125 / 2, 100 / 2 ;
+	camera.aspect = 150 / 2, 100 / 2 ;
 	camera.updateProjectionMatrix();
 
 	renderer.setSize( 125 / 2, 100 / 2  );

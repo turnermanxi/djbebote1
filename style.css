@@ -18,8 +18,8 @@ html {
 .container {
     display: flex;
     flex-direction: column;
+    flex-wrap: nowrap;
     font-size: 45px;
-    font-family: sans-serif;
     font-weight: 400;
     margin-top: 20px;
     align-items: center;
@@ -29,7 +29,6 @@ html {
     gap: 30px;
     
 }
-
 
 
 :root {
@@ -48,11 +47,9 @@ html {
     font-family: my-font;
     align-items: center;
     position: absolute;
-    z-index: 1;
+    z-index: -10;
     left: 0;
-    flex: none;
     top: 0;
-    resize: both;
 }
 
 #header a{
@@ -164,7 +161,6 @@ a {
 
 #exx {
     display: inline-block;
-    overflow: hidden;
     color: var(--eddy-yellow);
 }
 
@@ -342,15 +338,15 @@ footer {
     }
 
     ul {
-        width: 680px;
+        width: 100%;
     }
 
     footer{
-        width: 680px;
+        width: 100%;
     }
 
     #header {
-        width: 680px;
+        width: 100%;
     }
     .socials {
         top: 60%;
