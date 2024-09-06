@@ -60,9 +60,6 @@ html {
     
 }
 
-.container #header {
-    
-}
 
 ul {
     list-style-type: none;
@@ -228,6 +225,7 @@ canvas {
     position: fixed;
     left: 0;
     top: 0;
+    z-index: -11;
 }
 
 
