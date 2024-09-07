@@ -381,13 +381,7 @@ footer {
         align-items: center;
         justify-content: center;
     }
-    #formSubmit {
-        align-items: center;
-        justify-content: center;
-        position: absolute;
-        left: -60%;
-
-    }
+    
   }
 
   @media (max-width: 380px) {
