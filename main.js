@@ -81,6 +81,8 @@ function init() {
 
 	// model
 
+  
+function loadOBJWithMTL() {
   const mtlLoader = new MTLLoader();
   mtlLoader.load('bebo3.mtl', ( material ) => {
     material.preload();
@@ -108,9 +110,15 @@ function init() {
     spotLight.position.set(0, 25, 0);
     scene.add(spotLight);
 
-	});
-
+	}, undefined, function (error) {
+    console.error('An error happened while loading the OBJ file:', error);
   });
+  }, undefined, function(error) {
+    console.error('An error happened while loading the MTL file:', error);
+  });
+}
+
+loadOBJWithMTL('djbebote.obj', 'bebo3.mtl');
 
   const loader = new OBJLoader();
 	  loader.load('radio.obj', ( obj ) => {
